@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat";
+}
+
+body {
+    /* background: url(https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);*/
+    background-color: #f0ece9;
+}
+
+.music .left {
+    width: 74%;
+    height: 600px;
+    background: url(https://t4.ftcdn.net/jpg/00/50/07/81/360_F_50078109_k5ancJiseolRBFpLJCwptGs7U4NOhmKI.jpg)no-repeat center / cover;
+    /* background: url(https://i.pinimg.com/736x/14/6a/f7/146af7d996fa9cf77b40908c6694f8d8.jpg) no-repeat center / cover;*/
+    border-radius: 8px;
+}
+
+.music .right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -865px;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #1e1f26;*/
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.art .left {
+    /* width: 50%;*/
+    width: 74%;
+    height: 600px;
+    background: url(https://images.squarespace-cdn.com/content/v1/5d135e45c526970001811e69/1571840258169-DR02S49GE7OHLTUZDT5P/ke17ZwdGBToddI8pDm48kCXTVg0ByO0p77g6bpZL7-t7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmT2Rk9u7KA3hFIM978bk877VmOHOCSpdsNlW7GlpXIXYQVtHu55YcHOEzPLgr3oRG/I+don%27t+have+an+excuse.jpg?format=500w)no-repeat center / cover;
+    /*background: url(https://c4.wallpaperflare.com/wallpaper/649/200/63/digital-art-artwork-abstract-wallpaper-preview.jpg) no-repeat center / cover;*/
+    border-radius: 8px;
+}
+
+.art .right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+
+.dance .left {
+    /* width: 50%;*/
+    width: 74%;
+    height: 600px;
+    background: url(./images/dance.jpg)no-repeat center / cover;
+    /* background: url(https://www.itl.cat/pngfile/big/204-2046645_australian-ballet-dance-full-hd-widescreen-desktop-ballet.jpg)no-repeat center / cover;
+    /* background: url(https://previews.123rf.com/images/darijashka/darijashka1703/darijashka170300172/74745050-ballerina-in-dance-background.jpg) no-repeat center / cover;*/
+    border-radius: 8px;
+}
+
+.dance .right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+
+.right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.right p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+    .art .left {
+        width: 100%;
+        height: 400px;
+    }
+    .art .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+    .dance .left {
+        width: 100%;
+        height: 400px;
+    }
+    .dance .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+    .music .left {
+        width: 100%;
+        height: 400px;
+    }
+    .music .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+}

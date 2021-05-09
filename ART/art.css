@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 203, 213);
+}
+
+.grandart {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+    padding-top: 27px;
+    text-align: center;
+}
+
+.subart {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    /* display: flex; /* if want to show in single line */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
+}
+
+.subsubart {
+    /* width: 200px;*/
+    height: 100px;
+    background: #81ecec;
+    box-shadow: 0 0 20px #bac3c3;
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.subsubart:first-child {
+    background: #ffbe76;
+}
+
+.subsubart:last-child {
+    background: #ff7979;
+}
