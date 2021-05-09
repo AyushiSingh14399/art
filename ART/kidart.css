@@ -11,11 +11,21 @@ body {
     background-position: center;
 }
 
+
+/*
+.gallery-link {
+    width: 100vw;
+    height: 100vh;
+}
+*/
+
 h1 {
     text-align: center;
     font-size: 3rem;
 }
 
+
+/*
 .wrapper {
     width: 80vw;
     height: auto;
@@ -25,12 +35,71 @@ h1 {
     flex-wrap: wrap;
     transition: all 0.2 linear;
 }
+*/
+
+.gallery-container {
+    align-self: center;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    background: #7f818154;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    flex: 1 1 200px;
+}
 
 .gallery-container a div {
-    width: 100%;
+    margin-right: 50px;
+    width: 200px;
     height: 235px;
     background-color: red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.gallery-container .pic {
+    width: 200px;
+    height: 235px;
+}
+
+.gallery-container a:hover {
+    opacity: 0.8;
+}
+
+.spacer.big {
+    height: 32px;
+}
+
+.gallery-upload {
+    background-color: rgb(190, 192, 199);
+    height: 383px;
+}
+
+.form {
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input {
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:768px) {
+    .gallery-container a div {
+        width: 300px;
+        margin-right: 0px;
+    }
+    .gallery-container h3,
+    p {
+        text-align: center;
+    }
 }
